@@ -93,8 +93,24 @@ button {
   display: flex;
   align-items: center;
   margin-left: auto;
+  }
+  .contacts-item {
+    display: flex;
+    align-items: center;       
+  }
+  .contacts::before {
+    display: inline-block;    
+    content: "";
+    width: 16px;
+    height: 12px;
+    background-color: white;
+    color: #757575;
+    margin-right: 10px; 
+  }
+.contacts::before:hover,
+.contacts::before:focus {
+  color: var(--accent-color);
 }
-
 .contacts-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -155,6 +171,17 @@ button {
 /*======hero============*/
 .hero-section {
   background-color: #2f303a;
+}
+.overlay {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid black;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../img.dz1/stydio/Img\ bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .hero {
   margin: 0 auto;

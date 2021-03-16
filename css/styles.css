@@ -93,12 +93,18 @@ button {
   display: flex;
   align-items: center;
   margin-left: auto;
+  justify-content: space-between;
+  }
+  .nav-adr-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .contacts-item {
     display: flex;
     align-items: center;       
   }
-  .contacts::before {
+  .nav-adr-link::before {
     display: inline-block;    
     content: "";
     width: 16px;
@@ -107,8 +113,8 @@ button {
     color: #757575;
     margin-right: 10px; 
   }
-.contacts::before:hover,
-.contacts::before:focus {
+.nav-adr-link::before:hover,
+.nav-adr-link::before:focus {
   color: var(--accent-color);
 }
 .contacts-item:not(:last-child) {

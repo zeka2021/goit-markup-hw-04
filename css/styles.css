@@ -259,16 +259,20 @@ button {
 .quality-list-item { 
   width: 270px;
 }
-.quality-list-item {
-
+.quality-list-box {
+  display: flex; 
+  align-items: center;
+   
 }
-.quality-box {
+.quality-box-link {
   display: flex;
   justify-content: center;
   align-items: center;
   background: #F5F4FA;
-  border-radius: 4px;  
-
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
 }
 .quality-box-icon {
 
@@ -382,6 +386,42 @@ button {
 fill: #ffffff;
 }
 /*==========endteam========*/
+.permanent {
+padding-top: 94px;
+padding-bottom: 94px;
+background: #E5E5E5;
+}
+.permanent-list-item >{
+margin-right: 30px;
+}
+.permanent-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.permanent-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ 
+   
+}
+.permanent-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #757575;
+  background: #E5E5E5;
+  fill: #757575;
+}
+.permanent-list-link:hover .permanent-list-icon,
+.permanent-list-link:focus .permanent-list-icon {
+  fill: var(--accent-color);
+}
+.permanent-list-link:hover,
+.permanent-list-link:focus {
+  border: 1px solid var(--accent-color);
+}
 /*=========footer=========*/
 .footer {
   background: #2f303a;
@@ -435,7 +475,7 @@ fill: #ffffff;
 .resource-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 54px;
+  margin-bottom: 54px;  
 }
 .resource-list-item > {
   margin-right: 8px;

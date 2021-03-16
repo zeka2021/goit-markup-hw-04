@@ -102,7 +102,12 @@ button {
   }
   .contacts-item {
     display: flex;
-    align-items: center;       
+    align-items: center;
+    fill: #757575;
+  }
+  .contacts-item:hover,
+  .contacts-item:focus {
+    fill: var(--accent-color);
   }
   .nav-adr-link::before {
     display: inline-block;    
@@ -113,9 +118,18 @@ button {
     color: #757575;
     margin-right: 10px; 
   }
-.nav-adr-link::before:hover,
-.nav-adr-link::before:focus {
-  color: var(--accent-color);
+.nav-tel-link {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-tel-link::before {
+  display: inline-block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  margin-right: 10px;
 }
 .contacts-item:not(:last-child) {
   margin-right: 50px;
@@ -184,7 +198,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid black;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../img.dz1/stydio/Img\ bg.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url("../imgdz/stydio/Img\ bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -238,12 +252,26 @@ button {
   padding-bottom: 47px;
 }
 .quality-list {
-  display: flex;
+  display: flex;    
   align-items: center;
   margin-right: 30px;
 }
-.quality-list-item {
+.quality-list-item { 
   width: 270px;
+}
+.quality-list-item {
+
+}
+.quality-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #F5F4FA;
+  border-radius: 4px;  
+
+}
+.quality-box-icon {
+
 }
 .quality-list-item:not(:last-child) {
   margin-right: 30px;
@@ -280,6 +308,8 @@ button {
   letter-spacing: 0.03em;
   color: #757575;
 }
+
+
 /*==========end quality========*/
 /*=========team============*/
 .team-section {
@@ -324,6 +354,32 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 16px;
+}
+.social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+}
+.social-list-icon {
+  fill: #757575;
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+.social-list-link:hover .social-list-icon,
+.social-list-link:hover .social-list-icon {
+fill: #ffffff;
 }
 /*==========endteam========*/
 /*=========footer=========*/

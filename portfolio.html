@@ -33,9 +33,15 @@
             </nav>
             <ul class="contacts list">
                 <li class="contacts-item">
+                    <svg class="contacts-icon" width="16px" heght="12px">
+                        <use href="./imgdz/sprite.svg#icon-envelope-hover"></use>
+                    </svg>
                     <a class="nav-adr-link link addressnorm" href="mailto:info@devstudio.com">info@devstudio.com</a>
                 </li>
                 <li class="contacts-item">
+                    <svg class="contacts-icon" width="10px" heght="16px">
+                        <use href="./imgdz/sprite.svg#icon-smartphone-1"></use>
+                    </svg>
                     <a class="nav-adr-link link" href="tel:+380961111111">+38 096 111 11 11</a>
                 </li>
             </ul>
@@ -69,13 +75,11 @@
 
                 <ul class="projekt-list list">
                     <li class="projekt-list-item">
-                        <a>
-                            <img src="./imgdz/portfolio/img(1).jpg" alt="ноутбук">
-                            <div class="projekt-section-conteiner">
-                                <h3 class="team-name-projekt">Технокряк</h3>
-                                <p class="team-prof-projekt">Веб-сайт</p>
-                            </div>
-                        </a>
+                        <img src="./imgdz/portfolio/img(1).jpg" alt="ноутбук">
+                        <div class="projekt-section-conteiner">
+                            <h3 class="team-name-projekt">Технокряк</h3>
+                            <p class="team-prof-projekt">Веб-сайт</p>
+                        </div>
                     </li>
                     <li class="projekt-list-item">
                         <a>
@@ -153,8 +157,8 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="conteiner">
+    <footer class="footer conteiner">
+        <div class="footer-box-1">
             <a class="logo-footer link" href="" lang="en">Web<span class="logo-dark-theme">Studio</span></a>
             <address>
                 <ul class="list">
@@ -170,6 +174,39 @@
                     </li>
                 </ul>
             </address>
+        </div>
+        <div class="footer-box-2">
+            <p class="footer-text">присоединяйтесь</p>
+            <ul class="footer-list list">
+                <li class="footer-list-item">
+                    <a href="" class="footer-list-link link">
+                        <svg class="footer-list-icon">
+                            <use href="./imgdz/sprite.svg#icon-instagram-2" width="20px" height="20px"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="" class="footer-list-link link">
+                        <svg class="footer-list-icon">
+                            <use href="./imgdz/sprite.svg#icon-twitter-1" width="20px" height="20px"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="" class="footer-list-link link">
+                        <svg class="footer-list-icon">
+                            <use href="./imgdz/sprite.svg#icon-facebook-1" width="20px" height="20px"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="footer-list-item">
+                    <a href="" class="footer-list-link link">
+                        <svg class="footer-list-icon">
+                            <use href="./imgdz/sprite.svg#icon-envelope-hover" width="20px" height="20px"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
         </div>
     </footer>
 </body>

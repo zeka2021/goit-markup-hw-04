@@ -6,7 +6,7 @@
 .body {
   font-family: var(--main-font);
   background-color: white;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 }
 .link {
@@ -56,7 +56,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
 }
-.button {
+button {
   font-family: inherit;
 
 }
@@ -67,6 +67,7 @@ img {
   padding-top: 24px;
   padding-bottom: 25px;
   background: #ffffff;
+  height: 80px;
 }
 .header .conteiner {
   display: flex;
@@ -219,8 +220,7 @@ img {
   color: #ffffff;
   cursor: pointer;
   margin-left: auto;
-  margin-right: auto;
-  background: #F5F4FA;
+  margin-right: auto;  
   border-radius: 4px; 
 }
 .model-btn:hover,
@@ -325,6 +325,7 @@ border-radius: 4px;
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 100px;
+  width: 100%;
 }
 .team-list {
   display: flex;
@@ -394,7 +395,7 @@ fill: #ffffff;
 .permanent {
 padding-top: 94px;
 padding-bottom: 94px;
-background: #E5E5E5;
+background:#ffffff;
 }
 .permanent-list-item >{
 margin-right: 30px;
@@ -431,9 +432,14 @@ margin-right: 30px;
 .footer {
   background: #2f303a;
   padding-top: 60px;
-  padding-bottom: 60px;
-  display: flex;
+  padding-bottom: 60px;  
+  margin: 0;
+ 
+}
+.footer .conteiner {
+  display: flex;  
   align-items: baseline;
+  justify-content:flex-start;
  
 }
 .footer-box-1 {
@@ -543,6 +549,8 @@ margin-bottom: 20px;
   padding: 6px 22px;
   background-color: #f5f4fa;
   border-radius: none;
+  border: none;
+  cursor: pointer;
     
 }
 .model-btn-p:hover,

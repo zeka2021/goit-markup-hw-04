@@ -72,6 +72,8 @@ button {
 .header .conteiner {
   display: flex;
   align-items: center;
+  justify-content:center;
+  height: 80px;
 }
 .navigetion {
   display: flex;
@@ -399,6 +401,7 @@ background:#ffffff;
 }
 .permanent-list-item >{
 margin-right: 30px;
+
 }
 .permanent-list-item:not(:last-child) {
   margin-right: 30px;
@@ -406,9 +409,7 @@ margin-right: 30px;
 .permanent-list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
- 
-   
+  justify-content: space-between;   
 }
 .permanent-list-link {
   display: flex;
@@ -417,7 +418,7 @@ margin-right: 30px;
   width: 170px;
   height: 90px;
   border: 1px solid #757575;
-  background: #E5E5E5;
+  background: #ffffff;
   fill: #757575;
 }
 .permanent-list-link:hover .permanent-list-icon,
@@ -501,6 +502,12 @@ margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;  
+}
+.footer-list-item > {
+  margin-right: 20px;
+}
+.footer-list-item:not(:last-child) {
+  margin-right: 20px;
 }
 .footer-list-link {
   display: flex;  
@@ -595,7 +602,6 @@ margin-bottom: 20px;
   margin-bottom: 0;
 }
 .projekt-list-item:hover {
-
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 border-radius: 4px;
 }
